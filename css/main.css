@@ -1,0 +1,409 @@
+/* alphabet-soup 
+font-family: "alphabet-soup-pro", sans-serif;
+font-weight: 400;
+font-style: normal; */
+
+/* 
+.quicksand-<uniquifier> {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+ /* <weight>: Use a value from 300 to 700 */
+ /* <uniquifier>: Use a unique and descriptive class name */
+
+ /* 
+
+    CSS Guide
+
+    1. Web Fonts
+    2. General Styles
+    3. Header
+    4. Index Home Page
+    5. About Brand Page
+
+    8. Footer
+
+
+
+    5. Why Couples Resort
+    6. About & FAQ
+    7. Contact Form
+   
+    9. Activities Mobile Styles
+    10. Rooms Mobile Styles
+    11. Spa Mobile Styles
+    12. Activities Desktop Styles
+
+*/
+
+
+
+
+/* -- 1. Web Fonts --  */
+
+
+body {
+    font-family: 'Quicksand', sans-serif, arial;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 40px;
+    color: #333;
+}
+   
+
+h1 {
+   font-family: 'alphabet-soup', 'alphabet-soup-pro', sans-serif, arial;
+   font-size: 2px;
+   margin: 20px 0;
+   letter-spacing: 9px;
+   line-height: 1.6;
+   color: #bf0413;
+   /* text-shadow: #fa8518 3px 3px 0;
+   box-shadow: 5px 5px 0px #bd2ae6; */
+}
+
+h2 {
+   font-family: 'alphabet-soup', 'alphabet-soup-pro', sans-serif, arial;
+   font-size: 58px;
+   margin: 20px 0;
+   letter-spacing: 5px;
+   color: #bf0413;
+}
+
+h3 {
+   font-family: 'alphabet-soup', 'alphabet-soup-pro', sans-serif, arial;
+   font-size: 40px;
+   margin: 20px 0;
+   letter-spacing: 5px;
+   color: #bf0413;
+   text-align: center;
+}
+
+
+
+
+
+/* -- 2. General Styles_ Mobile Rules, Tablet Media Query Rules, Desktop Rules -- */
+
+
+#mobile-outline {
+   outline: 20px solid #333;
+   max-width: 412px;
+   margin: 20px auto 20px auto;
+   border-radius: 10px;
+} 
+
+
+
+
+
+/* -- 3. Header -- */
+
+#menu-toggle {
+  display: none;
+}
+
+#main-nav{
+  position: relative;
+}
+
+.burger-icon{
+  display: block;
+  cursor: pointer;
+  text-align: right;     
+  margin-top: 15px;
+}
+
+.burger-icon img{
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+  
+}
+
+#burger-menu {
+   display: none;
+   font-family: 'alphabet-soup', 'alphabet-soup-pro', sans-serif, arial;
+   font-size: 28px;
+   padding: 0;
+   margin-bottom: 10px;
+   list-style-type: none;
+   text-align: center;
+}
+
+#burger-menu li a{
+  display: block;
+  padding: 10px 0;
+  text-decoration: none;
+  color: #bf0413;
+  transition: color 0.2s ease;
+}
+
+#burger-menu li a:hover{
+  color: #F29F05;
+}
+
+#menu-toggle:checked ~ #burger-menu{
+  display: block;
+}
+
+ #main-nav input:checked ~ label img{
+    transform: rotate(90deg);
+ }
+
+@media screen and (min-width: 768px){
+
+  .burger-icon{
+    display: none;
+    }
+
+    #burger-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
+  }
+
+  
+    #menu-toggle:checked ~ #burger-menu{
+    display: flex;
+  }
+
+   #burger-menu li a{
+    padding: 10px 12px;
+    }
+}
+
+
+
+
+#logo {
+   margin: 15px 0 0 0;
+}
+
+
+@media screen and (min-width: 768px) { 
+   nav {
+      order: 2;
+   }
+
+   #burger {
+      display: none;
+   }
+
+   #burger-menu {
+      display: flex;
+      justify-content: space-evenly;   
+   }
+}
+
+
+
+
+
+/* -- 4. Index Home Page -- */
+
+#hero {
+   background-color: #fff;
+   width: 100%;
+   max-height: 540px;
+   aspect-ratio: 16 / 9;
+   border-radius: clamp(24px, 10vw, 100px);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: #333;
+
+}
+
+#explore_button{
+  display: inline-block;
+  background-color: #bf0413;
+  font-family: 'Quicksand', sans-serif, arial;
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  padding: 15px 34px;
+  border-radius: 50px;
+  text-align: center;
+}
+
+#home_video{
+  margin-top: 30px;
+  width: 100%;
+  aspect-ratio: 97 / 54;   
+  max-height: 540px;
+  background-color: #bf0413;
+  color: #fff;
+  text-align: center;
+}
+
+#main-pick {
+  text-align: center;
+  font-size: 42px;
+  line-height: 0.95;
+  letter-spacing: 2px;
+}
+
+@media screen and (min-width: 768px){
+  #main-pick{
+    font-size: 58px;
+    letter-spacing: 5px;
+  }
+}
+
+.what_is{
+  text-align: left;
+  font-family: 'alphabet-soup', 'alphabet-soup-pro', sans-serif, arial;
+  color: #bf0413;
+  font-size: 42px;
+  line-height: 0.95;
+  letter-spacing: 2px;
+  padding: 40px 0 10px 0;
+}
+
+@media screen and (min-width: 768px){
+  .what_is{
+    font-size: 58px;
+  }
+}
+
+#inspiration_board{
+  width: 100%;
+}
+
+
+#inspiration_img{
+  row-gap: 20px;
+  padding: 20px 0;
+}
+
+
+
+
+
+/* -- 5. About Brand page  -- */
+
+
+
+#brand_hero {
+   background-color: #fff;
+   width: 100%;
+   max-height: 540px;
+   aspect-ratio: 16 / 9;
+   border-radius: clamp(24px, 10vw, 100px);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: #333;
+
+}
+
+#burst_story h2{
+  font-size: 42px;     
+  line-height: 0.95;
+  letter-spacing: 2px;
+  margin: 18px 0 12px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px){
+  #burst_story h2{
+    font-size: 58px;    
+    letter-spacing: 5px;
+    margin: 20px 0;
+  }
+}
+
+#burst_story p{
+  margin: 0;
+  line-height: 1.6;
+}
+
+.container {
+   display: flex;
+   flex-direction: column;
+   gap: 40px;
+   margin-top: 40px;
+}
+
+@media screen and (min-width: 1024px){
+   .container{
+      flex-direction: row;
+      justify-content: space-between;
+   }
+
+   .item{
+      width: 32%;   
+   }
+}
+
+.item{
+   text-align: center;
+}
+
+.image-placeholder{
+   margin: 0 auto 20px auto;
+}
+
+.item p{
+  max-width: 320px;  
+  margin: 0 auto;     
+}
+
+
+#personality,
+#good h2 {
+  text-align: center;
+  font-size: 42px;
+  line-height: 0.95;
+  letter-spacing: 2px;
+}
+
+@media screen and (min-width: 768px){
+  #personality,
+  #good h2 {
+    font-size: 58px;
+    letter-spacing: 5px;
+  }
+}
+
+#sustainable_design {
+   background-color: #fff;
+   width: 100%;
+   max-height: 540px;
+   aspect-ratio: 16 / 9;
+   border-radius: clamp(24px, 10vw, 100px);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: #333;
+
+}
+
+#contact { 
+   height: 200px;
+}
+
+
+
+
+
+
+
+
+
+/* -- 8. Footer  -- */
+
+#copyright {
+   text-align: center;
+   font-size: 14px;
+   font-weight: bold;
+   color: #333;
+   padding: 20px 0;
+}
